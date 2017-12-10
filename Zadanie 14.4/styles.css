@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+
+#app {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  
+}
+
+
+button {
+	background-color: #95bbdf; 
+    border: none;
+	border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+	margin-top: 10px;
+	margin-left: 15px;
+	cursor: pointer;
+}
