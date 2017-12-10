@@ -29,7 +29,7 @@ var moviesElements = movie.map(function(movie) {
             React.createElement('p', {}, movie.desc),
             React.createElement('p', {}, movie.release),
             React.createElement('p', {}, movie.type),
-			React.createElement('img', {src: movie.picture.src}),
+			React.createElement('img', {src: movie.picture.src})
           );
 });
 
