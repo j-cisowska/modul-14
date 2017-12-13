@@ -1,6 +1,7 @@
 var Counter = React.createClass({
     getInitialState: function() {
-        return {
+        console.log('Początkowy stan naszego komponentu');
+		return {
             counter: 0
         };
     },
@@ -17,6 +18,15 @@ var Counter = React.createClass({
             counter: this.state.counter - 1
         });
     },
+	
+	
+	componentWillMount: function() {
+        console.log('Wywołanie bezpośrednio przed wystąpieniem montowania');
+},
+
+		componentDidMount: function() {
+        console.log('Cały komponent jest już wyrenderowany, można działać');
+},
 
     render: function() {
         return React.createElement('div', {},
@@ -26,6 +36,9 @@ var Counter = React.createClass({
         );
     }
 });
+
+
+
 
 var element = React.createElement('div', {},
   React.createElement(Counter),
